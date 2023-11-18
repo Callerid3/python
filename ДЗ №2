@@ -1,36 +1,27 @@
-'''
-словарь
-'''
-london_co = {
-"r1": {
-"location": "21 New Globe Walk",
-"vendor": "Cisco",
-"model": "4451",
-"ios": "15.4",
-"ip": "10.255.0.1",
-},
-"r2": {
-"location": "21 New Globe Walk",
-"vendor": "Cisco",
-"model": "4451",
-"ios": "15.4",
-"ip": "10.255.0.2",
-},
-"sw1": {
-"location": "21 New Globe Walk",
-"vendor": "Cisco","model": "3850",
-"ios": "3.6.XE",
-"ip": "10.255.0.101",
-"vlans": "10,20,30",
-"routing": True,
-},
-}
-#Вывод значения словаря через переменную, присваемую input
-# Переменная a = ключ
-# r1, r2 или sw1
-a=input("Введите имя устройства: ", )
-# Переменная b = значение
-#(location, vendor, model, ios, ip, vlans, routing)
-b=input("Введите имя параметра: ", )
-# вывод значения
-print(london_co[a][b])
+import random
+# числа рандома от / до
+value = random.randint(1,10)
+# счетчик для wihle
+count=0
+#список a
+a=[]
+# цикл построения программы
+while count < 10:
+    if count < 10:
+        c=a
+        b=random.randint(1,10)
+        a.append(b)
+        count=count+1
+# печать списка a
+print(a)
+# подсчет повторяющихся элементов
+print("число 1 повторяется =", a.count(1))
+print("число 2 повторяется =", a.count(2))
+print("число 3 повторяется =", a.count(3))
+print("число 4 повторяется =", a.count(4))
+print("число 5 повторяется =", a.count(5))
+print("число 6 повторяется =", a.count(6))
+print("число 7 повторяется =", a.count(7))
+print("число 8 повторяется =", a.count(8))
+print("число 9 повторяется =", a.count(9))
+print("число 10 повторяется =", a.count(10))
