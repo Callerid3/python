@@ -1,1 +1,19 @@
-# EMPTY
+import random
+# числа рандома от / до
+value = random.randint(1,10)
+# счетчик для wihle
+count=0
+#список a
+a=[]
+# цикл построения программы
+while count < 10:
+    if count < 10:
+        c=a
+        b=random.randint(1,10)
+        a.append(b)
+        #удаление повторяющихся элементов
+        if a.count(b) > 1:
+            a.remove(b)
+        count=count+1
+# печать списка a
+print(a)
