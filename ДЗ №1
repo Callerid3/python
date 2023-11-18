@@ -1,34 +1,29 @@
+import random
+# числа рандома от / до
+print("Введите число 1")
+a=int(input())
+print("Введите число 2")
+b=int(input())
+print("Введите число 3")
+c=int(input())
 #
-'''
-словарь
-'''
-london_co = {
-"r1": {
-"location": "21 New Globe Walk",
-"vendor": "Cisco",
-"model": "4451",
-"ios": "15.4",
-"ip": "10.255.0.1",
-},
-"r2": {
-"location": "21 New Globe Walk",
-"vendor": "Cisco",
-"model": "4451",
-"ios": "15.4",
-"ip": "10.255.0.2",
-},
-"sw1": {
-"location": "21 New Globe Walk",
-"vendor": "Cisco","model": "3850",
-"ios": "3.6.XE",
-"ip": "10.255.0.101",
-"vlans": "10,20,30",
-"routing": True,
-},
-}
-'''
-Вывод значения словаря через переменную, присваемую input
-'''
-# r1, r2 или sw1
-a=input("Введите имя устройства: ", )
-print(london_co.get(a))
+#рандомные числа
+d=random.randint(1,1000)
+print(d)
+e=random.randint(1,1000)
+print(e)
+# условие для свапа d <> e
+if d > e:
+    f=e
+    e=d
+    d=f
+# определения вхождения в список
+if a > d:
+    if a < e:
+        print("Число", a, "входит в отрезок")
+if b > d:
+    if b < e:
+        print("Число", b, "входит в отрезок")
+if c > d:
+    if c < e:
+        print("Число", c, "входит в отрезок")
