@@ -1,1 +1,35 @@
-# EMPTY
+import random
+# числа рандома от / до
+value = random.randint(1,10)
+# счетчик для wihle
+count=0
+#список a
+a=[]
+min=10
+max=0
+# цикл построения программы
+while count < 10:
+    if count < 10:
+        b=random.randint(1,10)
+        if b < min:
+            min=b
+        if b > max:
+            max=b
+        a.append(b)
+        count=count+1
+# печать списка a
+print(a)
+print("минимальное число =", min)
+print("максимальное число =", max)
+# индекс минимального числа
+c=a.index(min)
+# удаление минимального числа
+a.remove(min)
+# постановка максимального числа на минимальное
+a.insert(c, max)
+print(a)
+# индекс максимального числа
+d=a.index(max)
+a.remove(max)
+a.insert(d, min)
+print(a)
