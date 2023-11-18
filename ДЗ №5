@@ -1,1 +1,17 @@
-# EMPTY
+# объявление списка
+a=[4,0,5,0,3,0,0,5]
+print(a)
+# счетчик
+count=0
+# что ищем
+b=0
+# количество повторений того что ищем
+c=a.count(b)
+print(c)
+# цикл удаления и добавления того что ищем
+while count < c:
+    if count < c:
+        a.remove(0)
+        a.append(0)
+        count=count+1
+print(a)
